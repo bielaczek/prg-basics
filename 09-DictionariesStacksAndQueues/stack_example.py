@@ -29,3 +29,17 @@ while not cards.empty():
 Note the order of the printed elements.
 The last added element is printed first.
 """
+
+cards.put(2)
+cards.put(3)
+cards.put(7)
+cards.put(4)
+cards.put(1)
+cards.put(9)
+cards.put(8)
+
+print(f'Sum of last 2 elements: {cards.get() + cards.get()}')
+sum = 0
+while not cards.empty():
+    sum += cards.get()
+print(f'Sum of remaining elements: {sum}')
